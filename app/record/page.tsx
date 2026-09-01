@@ -42,9 +42,8 @@ export default function RecordPage() {
               When a household is keeping a concentrated name, that position
               stays. Lotpress does not add to it. Remaining cash is used to
               build a sample of US large-cap around the holding, and the
-              signed page reports where the account is overweight relative to
-              that sample. Nothing on the page claims the account matches a
-              published index.
+              signed page reports where the account is overweight. Nothing
+              on the page claims the account matches a published index.
             </p>
             <p>
               The other case is a household with no such constraint: the

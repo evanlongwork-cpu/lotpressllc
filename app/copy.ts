@@ -1,8 +1,8 @@
 export const SITE_TITLE =
-  "Lotpress — sampled US large-cap construction for advisers who keep the account";
+  "Lotpress — sampled US large-cap for advisers who keep the account";
 
 export const STANDFIRST =
-  "Sampled US large-cap construction for advisers who keep the account.";
+  "Sampled US large-cap for advisers who keep the account.";
 
 export const COVER = "You still sign the tickets.";
 
