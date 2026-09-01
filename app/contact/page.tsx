@@ -18,8 +18,7 @@ export default function ContactPage() {
         <p className="standfirst">Name, firm, and email.</p>
         <p className="lead">
           Write to{" "}
-          <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. This address
-          is a placeholder until the inbox is live.
+          <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
         </p>
         <ContactForm />
         <p className="note">

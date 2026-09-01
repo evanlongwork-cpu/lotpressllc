@@ -36,4 +36,4 @@ When the domain is purchased:
 
 ## Contact
 
-`hello@lotpressllc.com` is printed as a labeled placeholder until the inbox exists.
+`evan@lotpressllc.com`
