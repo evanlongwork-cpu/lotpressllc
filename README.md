@@ -1,6 +1,6 @@
 # Lotpress
 
-Public firm site for Lotpress. Sampled US large-cap. You keep the account.
+Public firm site for Lotpress. Sampled US large-cap construction for advisers who keep the account.
 
 Intended domain: `lotpressllc.com`. Placeholder host is fine until DNS exists. Do not purchase a domain from this repository.
 

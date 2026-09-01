@@ -16,11 +16,11 @@ export default function HomePage() {
           <ol className="steps">
             <li>
               <span>1</span>
-              <p>Holdings in.</p>
+              <p>The adviser sends holdings.</p>
             </li>
             <li>
               <span>2</span>
-              <p>A signed order file and a one-page record out.</p>
+              <p>An order file and a one-page record come back for review.</p>
             </li>
             <li>
               <span>3</span>

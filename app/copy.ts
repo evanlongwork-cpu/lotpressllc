@@ -1,11 +1,12 @@
 export const SITE_TITLE =
-  "Lotpress — Sampled US large-cap. You keep the account.";
+  "Lotpress — sampled US large-cap construction for advisers who keep the account";
 
-export const STANDFIRST = "Sampled US large-cap. You keep the account.";
+export const STANDFIRST =
+  "Sampled US large-cap construction for advisers who keep the account.";
 
 export const COVER = "You still sign the tickets.";
 
-export const LEAD = `Lotpress is software for investment advisers who want to keep the account. It builds a sampled US large-cap book. The adviser remains the adviser of record. Client assets remain at the custodian. Lotpress does not exercise investment discretion, does not hold client funds or securities, and does not place orders. It produces an order file and a one-page record. The adviser reviews, signs, and enters the orders. Use it around a name the client will not sell, or in place of a managed large-cap account. The first file is built for Charles Schwab.`;
+export const LEAD = `Lotpress is construction software for investment advisers who intend to remain adviser of record. It produces a sampled US large-cap book, either around a concentrated holding the client will not sell, or in place of handing a managed large-cap account to an outside manager. Client assets remain at the custodian. Lotpress does not exercise investment discretion, hold client funds or securities, or place orders. It writes an order file and a one-page record. The adviser reviews both, signs, and enters the orders. The first file is built for Charles Schwab.`;
 
 export const CONTACT_EMAIL = "evan@lotpressllc.com";
 

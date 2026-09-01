@@ -21,16 +21,16 @@ export default function RecordPage() {
           <h2 id="custody">Custody, discretion, and signature</h2>
           <div className="facts">
             <p>
-              The adviser remains the adviser of record. Lotpress does not
-              exercise investment discretion.
+              The adviser of record does not change. Lotpress does not take
+              investment discretion.
             </p>
             <p>
               Client assets remain at the custodian. Lotpress does not hold
               client funds or securities.
             </p>
             <p>
-              Lotpress does not place orders. It produces an order file and a
-              one-page record. The adviser reviews, signs, and enters the
+              Lotpress does not place orders. It writes an order file and a
+              one-page record; the adviser reviews, signs, and enters the
               orders. The first file is built for Charles Schwab.
             </p>
           </div>
@@ -39,30 +39,29 @@ export default function RecordPage() {
           <h2 id="book">The book</h2>
           <div className="facts">
             <p>
-              Around a concentrated name the client will not sell, the name is
-              kept. The file does not buy more of that name. The rest of the
-              book is a sample of US large-cap around it. The signed page
-              shows where the account is overweight. It does not claim the
-              account matches a published index.
+              When a household is keeping a concentrated name, that position
+              stays. Lotpress does not add to it. Remaining cash is used to
+              build a sample of US large-cap around the holding, and the
+              signed page reports where the account is overweight relative to
+              that sample. Nothing on the page claims the account matches a
+              published index.
             </p>
             <p>
-              Or the adviser wants a sampled US large-cap book they still
-              ticket, instead of handing the account to a manager. They keep
-              the account.
+              The other case is a household with no such constraint: the
+              adviser wants a sampled US large-cap book they will ticket
+              themselves, rather than appoint a manager. Either way the
+              account remains with the firm.
             </p>
             <p>
-              The adviser chooses how many names, which sectors to leave out,
-              and which holdings sit inside or outside the sample.
+              Name count, sector omissions, and whether an existing holding
+              sits inside or outside the sample are adviser inputs. Positions
+              are sized in whole shares, and residual cash is shown on the
+              record. The adviser is the one who enters the orders.
             </p>
             <p>
-              This page is construction software. It is not tax-loss
-              harvesting. It is not a discretionary separately managed
-              account. It is not a robo. It is not a broker-dealer.
-            </p>
-            <p>
-              Orders are whole shares. Residual cash is shown. The adviser is
-              the person who types. The first file is built for Charles
-              Schwab.
+              Lotpress is a construction tool, not a tax-loss harvesting
+              engine, a discretionary separately managed account, a
+              robo-adviser, or a broker-dealer.
             </p>
           </div>
         </section>
