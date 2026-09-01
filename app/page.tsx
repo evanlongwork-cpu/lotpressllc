@@ -1,6 +1,6 @@
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
-import { COVER, SCHWAB, STANDFIRST } from "./copy";
+import { COVER, LEAD, STANDFIRST } from "./copy";
 
 export default function HomePage() {
   return (
@@ -9,7 +9,7 @@ export default function HomePage() {
       <main>
         <h1 className="headline">Lotpress</h1>
         <p className="standfirst">{STANDFIRST}</p>
-        <p className="lead">{SCHWAB}</p>
+        <p className="lead">{LEAD}</p>
         <p className="cover">{COVER}</p>
         <section className="section" aria-labelledby="how">
           <h2 id="how">How it works</h2>

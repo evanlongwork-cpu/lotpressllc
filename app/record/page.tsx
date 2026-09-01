@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { COVER, SCHWAB, SITE_TITLE, STANDFIRST } from "../copy";
+import { COVER, LEAD, SITE_TITLE, STANDFIRST } from "../copy";
 
 export const metadata: Metadata = {
   title: SITE_TITLE,
@@ -15,7 +15,7 @@ export default function RecordPage() {
       <main>
         <h1 className="headline">Lotpress</h1>
         <p className="standfirst">{STANDFIRST}</p>
-        <p className="lead">{SCHWAB}</p>
+        <p className="lead">{LEAD}</p>
         <p className="cover">{COVER}</p>
         <section className="section" aria-labelledby="custody">
           <h2 id="custody">Custody, discretion, and signature</h2>
@@ -25,13 +25,13 @@ export default function RecordPage() {
               exercise investment discretion.
             </p>
             <p>
-              Client assets remain at Charles Schwab. Lotpress does not hold
+              Client assets remain at the custodian. Lotpress does not hold
               client funds or securities.
             </p>
             <p>
               Lotpress does not place orders. It produces an order file and a
               one-page record. The adviser reviews, signs, and enters the
-              orders at Schwab.
+              orders. The first file is built for Charles Schwab.
             </p>
           </div>
         </section>
@@ -39,14 +39,16 @@ export default function RecordPage() {
           <h2 id="book">The book</h2>
           <div className="facts">
             <p>
-              Built for advisers who will not give the account to an outside
-              manager.
+              Around a concentrated name the client will not sell, the name is
+              kept. The file does not buy more of that name. The rest of the
+              book is a sample of US large-cap around it. The signed page
+              shows where the account is overweight. It does not claim the
+              account matches a published index.
             </p>
             <p>
-              The concentrated name is kept. The file does not buy more of that
-              name. The rest of the book is a sample of US large-cap around it.
-              The signed page shows where the account is overweight. It does
-              not claim the account matches a published index.
+              Or the adviser wants a sampled US large-cap book they still
+              ticket, instead of handing the account to a manager. They keep
+              the account.
             </p>
             <p>
               The adviser chooses how many names, which sectors to leave out,
@@ -59,7 +61,8 @@ export default function RecordPage() {
             </p>
             <p>
               Orders are whole shares. Residual cash is shown. The adviser is
-              the person who types at Schwab.
+              the person who types. The first file is built for Charles
+              Schwab.
             </p>
           </div>
         </section>
