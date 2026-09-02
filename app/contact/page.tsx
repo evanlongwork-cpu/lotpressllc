@@ -11,11 +11,10 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="shell">
+    <div className="shell record">
       <Header path="/contact" />
       <main>
-        <h1 className="headline">Lotpress</h1>
-        <p className="standfirst">Name, firm, and email.</p>
+        <h1 className="page-title">Name, firm, and email.</h1>
         <p className="lead">
           Write to{" "}
           <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.

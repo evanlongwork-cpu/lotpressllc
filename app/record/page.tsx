@@ -13,10 +13,9 @@ export default function RecordPage() {
     <div className="shell record">
       <Header path="/record" />
       <main>
-        <h1 className="headline">Lotpress</h1>
+        <p className="cover">{COVER}</p>
         <p className="standfirst">{STANDFIRST}</p>
         <p className="lead">{LEAD}</p>
-        <p className="cover">{COVER}</p>
         <section className="section" aria-labelledby="custody">
           <h2 id="custody">Custody, discretion, and signature</h2>
           <div className="facts">
