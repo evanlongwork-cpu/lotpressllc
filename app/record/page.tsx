@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { COVER, LEAD, SITE_TITLE, STANDFIRST } from "../copy";
+import { COVER, CUSTODY_FACTS, LEAD, SITE_TITLE, STANDFIRST } from "../copy";
 
 export const metadata: Metadata = {
   title: SITE_TITLE,
@@ -20,19 +20,9 @@ export default function RecordPage() {
         <section className="section" aria-labelledby="custody">
           <h2 id="custody">Custody, discretion, and signature</h2>
           <div className="facts">
-            <p>
-              The adviser of record does not change. Lotpress does not take
-              investment discretion.
-            </p>
-            <p>
-              Client assets remain at the custodian. Lotpress does not hold
-              client funds or securities.
-            </p>
-            <p>
-              Lotpress does not place orders. It writes an order file and a
-              one-page record; the adviser reviews, signs, and enters the
-              orders. The first file is built for Charles Schwab.
-            </p>
+            {CUSTODY_FACTS.map((fact) => (
+              <p key={fact}>{fact}</p>
+            ))}
           </div>
         </section>
         <section className="section" aria-labelledby="book">

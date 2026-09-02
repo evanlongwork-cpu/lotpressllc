@@ -91,7 +91,7 @@ nav a {
 
 nav a[aria-current="page"] {
   color: var(--ink);
-  text-decoration: underline;
+  font-weight: 500;
 }
 
 main {
@@ -115,8 +115,7 @@ main {
 }
 
 .lead,
-.facts p,
-.steps p {
+.facts p {
   margin: 0 0 1.1rem;
 }
 
@@ -125,11 +124,14 @@ main {
 }
 
 .cover {
-  margin: 1.75rem 0 0;
-  padding: 1.1rem 1.15rem;
-  background: var(--card);
-  color: var(--ink);
-  font-size: 1.15rem;
+  margin: 0 0 1.5rem;
+  padding: 0 0 1.1rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--copper) 28%, var(--paper));
+  font-family: var(--font-serif), "Source Serif 4", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
 }
 
 .section {
@@ -147,24 +149,18 @@ main {
   color: var(--slate);
 }
 
-.steps {
-  list-style: none;
+.procedure {
   margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 0.85rem;
+  padding-left: 1.2rem;
 }
 
-.steps li {
-  display: grid;
-  grid-template-columns: 1.6rem 1fr;
-  gap: 0.7rem;
-  padding: 0.95rem 1rem;
-  background: var(--card);
+.procedure li {
+  margin: 0 0 0.55rem;
+  padding-left: 0.2rem;
 }
 
-.steps span {
-  color: var(--copper);
+.procedure li::marker {
+  color: var(--ink);
   font-variant-numeric: tabular-nums;
 }
 
@@ -268,7 +264,7 @@ button:hover,
   }
 
   .cover,
-  .steps li,
+  .procedure li,
   .facts {
     break-inside: avoid;
   }
