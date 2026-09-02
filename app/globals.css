@@ -4,6 +4,8 @@
   --ink: #1a1814;
   --copper: #9a6234;
   --slate: #3e5350;
+  --hairline: color-mix(in srgb, var(--copper) 28%, var(--paper));
+  --measure: min(54rem, calc(100% - 2.5rem));
 }
 
 * {
@@ -37,19 +39,35 @@ a:hover {
   color: var(--copper);
 }
 
-.shell {
-  width: min(40rem, calc(100% - 2.5rem));
+.desk {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--paper);
+}
+
+.desk-rail {
+  width: var(--measure);
+  max-width: 100%;
   margin: 0 auto;
-  padding: 1.75rem 0 4rem;
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background: var(--paper);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.site-header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.25rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid color-mix(in srgb, var(--copper) 28%, var(--paper));
+  padding: 1.1rem 0;
 }
 
 .brand {
@@ -94,8 +112,23 @@ nav a[aria-current="page"] {
   font-weight: 500;
 }
 
+.desk-body {
+  flex: 1;
+  width: 100%;
+  padding: 1.75rem 0 2.5rem;
+}
+
+.sheet {
+  width: var(--measure);
+  max-width: calc(100% - 2.5rem);
+  margin: 0 auto;
+  padding: 2rem 2.25rem 2.5rem;
+  background: var(--card);
+  border: 1px solid var(--hairline);
+}
+
 main {
-  padding-top: 2.4rem;
+  padding: 0;
 }
 
 .page-title {
@@ -133,7 +166,7 @@ main {
 .cover {
   margin: 0 0 1.5rem;
   padding: 0 0 1.1rem;
-  border-bottom: 1px solid color-mix(in srgb, var(--copper) 28%, var(--paper));
+  border-bottom: 1px solid var(--hairline);
   font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: 1.2rem;
   font-weight: 600;
@@ -143,10 +176,11 @@ main {
 
 .section {
   margin-top: 2.4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--hairline);
 }
 
-.section h2,
-.record h2 {
+.section h2 {
   margin: 0 0 0.85rem;
   font-family: var(--font-plex), "IBM Plex Sans", sans-serif;
   font-size: 0.78rem;
@@ -202,7 +236,7 @@ label {
 input {
   width: 100%;
   border: 1px solid color-mix(in srgb, var(--slate) 28%, var(--paper));
-  background: var(--card);
+  background: var(--paper);
   color: var(--ink);
   font: inherit;
   padding: 0.55rem 0.65rem;
@@ -234,20 +268,33 @@ button:hover,
 }
 
 .site-footer {
-  margin-top: 3.2rem;
-  padding-top: 1.1rem;
-  border-top: 1px solid color-mix(in srgb, var(--copper) 28%, var(--paper));
+  width: 100%;
+  margin-top: auto;
+  padding: 1.1rem 0 2rem;
+  border-top: 1px solid var(--hairline);
   color: var(--slate);
   font-size: 0.88rem;
 }
 
+.site-footer p {
+  margin: 0;
+}
+
 @media (max-width: 640px) {
-  .shell {
-    width: min(40rem, calc(100% - 1.6rem));
-    padding-top: 1.2rem;
+  :root {
+    --measure: calc(100% - 1.6rem);
   }
 
-  .site-header {
+  .desk-body {
+    padding: 1.2rem 0 2rem;
+  }
+
+  .sheet {
+    max-width: calc(100% - 1.6rem);
+    padding: 1.5rem 1.25rem 1.75rem;
+  }
+
+  .site-header-inner {
     align-items: flex-start;
     flex-direction: column;
   }
@@ -260,13 +307,23 @@ button:hover,
     color: var(--ink);
   }
 
+  .site-header {
+    position: static;
+  }
+
   .site-header nav,
   .no-print {
     display: none;
   }
 
-  .shell {
+  .desk-body {
+    padding: 0;
+  }
+
+  .sheet {
     width: 100%;
+    max-width: none;
+    border: 0;
     padding: 0;
   }
 

@@ -10,21 +10,23 @@ const links = [
 export function Header({ path }: { path: string }) {
   return (
     <header className="site-header">
-      <Link className="brand" href="/">
-        <Mark />
-        <span className="wordmark">Lotpress</span>
-      </Link>
-      <nav aria-label="Site">
-        {links.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            aria-current={path === link.href ? "page" : undefined}
-          >
-            {link.label}
-          </Link>
-        ))}
-      </nav>
+      <div className="desk-rail site-header-inner">
+        <Link className="brand" href="/">
+          <Mark />
+          <span className="wordmark">Lotpress</span>
+        </Link>
+        <nav aria-label="Site">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              aria-current={path === link.href ? "page" : undefined}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 }

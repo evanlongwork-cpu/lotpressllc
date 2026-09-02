@@ -1,15 +1,9 @@
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
+import { Desk } from "./components/Desk";
 
 export default function NotFound() {
   return (
-    <div className="shell">
-      <Header path="" />
-      <main>
-        <h1 className="headline">Lotpress</h1>
-        <p className="standfirst">This page is not here.</p>
-      </main>
-      <Footer />
-    </div>
+    <Desk path="">
+      <p className="standfirst">This page is not here.</p>
+    </Desk>
   );
 }
